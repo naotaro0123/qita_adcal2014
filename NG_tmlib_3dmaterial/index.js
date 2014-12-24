@@ -73,6 +73,10 @@ var MainScene = tm.createClass({
 
             group.add( elm );
         });
+        // ライティング
+        var lLight = new THREE.DirectionalLight(0xffffff, 3);
+        lLight.position.set(0,0,3);
+        group.add(lLight);
         // カメラセットアップ
         this.camera.position.set(0, 0, 300);
     }
